@@ -24,11 +24,11 @@ jobs:
       run: mvn -B package --file pom.xml
 
     - name: Build & push Docker image
-        uses: mr-smithers-excellent/docker-build-push@v5
-        with:
-          image: hung2306/gitlab
-          tags: latest
-          registry: docker.io
-          dockerfile: Dockerfile
-          username: hung2306
-          password: Hung267196@
+      uses: mr-smithers-excellent/docker-build-push@v5
+      with:
+        image: hung2306/gitlab
+        tags: latest
+        registry: docker.io
+        dockerfile: Dockerfile
+        username: hung2306
+        password: Hung267196@
