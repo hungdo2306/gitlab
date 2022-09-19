@@ -32,3 +32,5 @@ jobs:
         password: Hung267196@
     - name: Build and push
       uses: docker/build-push-action@v3
+      with:
+        image: hung2306/gitlab
